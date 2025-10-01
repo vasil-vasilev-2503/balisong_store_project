@@ -1,0 +1,62 @@
+.page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000, #1a0000);
+    color: #f0e6e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.hero {
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    color: #dc143c;
+    text-shadow: 0 0 12px #8b0000;
+}
+
+.hero-subtext {
+    font-size: 1.1rem;
+    color: #f0e6e6cc;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 2.2rem;
+    background-color: #dc143c;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 0 12px #8b0000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.cta-button:hover {
+    background-color: #a31127;
+    box-shadow: 0 0 18px #dc143c;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
